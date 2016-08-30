@@ -17,7 +17,7 @@ def post_to_rapidapps(body):
         "lengthOfTibia":body['lengthOfTibia'],
         "distanceElbowBottom":body['distanceElbowBottom'],
         "defaultWorkplace":body['defaultWorkplace'],
-        "email": body.get('email','')
+        "email": body.get('email')
     }
     headers = {
         'content-type': "application/json"
